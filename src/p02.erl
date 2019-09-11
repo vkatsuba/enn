@@ -13,6 +13,6 @@
 %% -------------------------------------------------------------------
 -spec run(L :: lists:list()) -> Result :: lists:list() | {error, badarg}.
 
-run([_ ,_ | []] = L) -> L;
-run([_ | T]) -> run(T);
-run(_) -> {error, badarg}.
+run([_ ,_ | []] = L)  -> L;
+run([_ | T])          -> run(T);
+run(_)                -> {error, badarg}.
