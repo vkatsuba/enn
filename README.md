@@ -3,7 +3,7 @@
 
 ## Contents
 * [Goals](#goals)
-* [Build & Run](#build-&run)
+* [Build & Run](#build-&-run)
 * [Documentation](#documentation)
 * [Support](#support)
 
