@@ -7,6 +7,7 @@
 * [Documentation](#documentation)
 * [Problem 01](#problem-01)
 * [Problem 02](#problem-02)
+* [Problem 03](#problem-03)
 * [Support](#support)
 
 ## Goals
@@ -22,19 +23,24 @@ $ make
 * The examples of 99 problems was get from [Ninety-Nine Lisp Problems](http://www.ic.unicamp.br/~meidanis/courses/mc336/2006s2/funcional/L-99_Ninety-Nine_Lisp_Problems.html)
 
 ## Problem 01
-(C) Find the last box of a list.
-**Example:**
+(C) Find the last box of a list. **Example:**
 ```erlang
 1> p01:run([a, b, c, d]).
 d
 ```
 
 ## Problem 02
-(C) Find the last but one box of a list.
-**Example:**
+(C) Find the last but one box of a list. **Example:**
 ```erlang
 1> p02:run([a, b, c, d]).
 [c,d]
+```
+
+## Problem 03
+(C) Find the K'th element of a list. **Example:**
+```erlang
+1> p03:run([a, b, c, d, e], 3).
+с
 ```
 
 ### To be continued ...
