@@ -23,8 +23,10 @@ Ninety-Nine Lisp Problems
 ## Problem 01
 (C) Find the last box of a list.
 Example:
- (my-last '(a b c d))
- (D)
+```
+(my-last '(a b c d))
+(D)
+```
 
 **Solution**
 ```erlang
