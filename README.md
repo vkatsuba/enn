@@ -5,6 +5,8 @@
 * [Goals](#goals)
 * [Build & Run](#build--run)
 * [Documentation](#documentation)
+* [Problem 01](#problem-01)
+* [Problem 02](#problem-02)
 * [Support](#support)
 
 ## Goals
@@ -25,6 +27,14 @@ $ make
 ```erlang
 1> p01:run([a, b, c, d]).
 d
+```
+
+## Problem 02
+(C) Find the last but one box of a list.
+**Example:**
+```erlang
+1> p02:run([a, b, c, d]).
+[c,d]
 ```
 
 ### To be continued ...
