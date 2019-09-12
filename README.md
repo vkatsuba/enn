@@ -9,6 +9,7 @@
 * [Problem 02](#problem-02)
 * [Problem 03](#problem-03)
 * [Problem 04](#problem-04)
+* [Problem 05](#problem-05)
 * [Support](#support)
 
 ## Goals
@@ -49,6 +50,13 @@ d
 ```erlang
 1> p04:run([a, b, c, d, e]).
 5
+```
+
+## Problem 05
+(C) Reverse a list. **Example:**
+```erlang
+1> p05:run([a, b, c, d, e]).
+[e,d,c,b,a]
 ```
 
 ### To be continued ...
