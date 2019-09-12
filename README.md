@@ -8,6 +8,7 @@
 * [Problem 01](#problem-01)
 * [Problem 02](#problem-02)
 * [Problem 03](#problem-03)
+* [Problem 04](#problem-04)
 * [Support](#support)
 
 ## Goals
@@ -41,6 +42,13 @@ d
 ```erlang
 1> p03:run([a, b, c, d, e], 3).
 с
+```
+
+## Problem 04
+(C) Find the number of elements of a list. **Example:**
+```erlang
+1> p04:run([a, b, c, d, e]).
+5
 ```
 
 ### To be continued ...
