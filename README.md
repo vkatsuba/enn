@@ -10,7 +10,7 @@
 * [Problem 03](#problem-03)
 * [Problem 04](#problem-04)
 * [Problem 05](#problem-05)
-* [Problem 05](#problem-06)
+* [Problem 06](#problem-06)
 * [Support](#support)
 
 ## Goals
