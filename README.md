@@ -10,6 +10,7 @@
 * [Problem 03](#problem-03)
 * [Problem 04](#problem-04)
 * [Problem 05](#problem-05)
+* [Problem 05](#problem-06)
 * [Support](#support)
 
 ## Goals
@@ -57,6 +58,13 @@ d
 ```erlang
 1> p05:run([a, b, c, d, e]).
 [e,d,c,b,a]
+```
+
+## Problem 06
+(C) Find out whether a list is a palindrome. **Example:**
+```erlang
+1> p06:run([a, b, c, b, a]).
+true
 ```
 
 ### To be continued ...
