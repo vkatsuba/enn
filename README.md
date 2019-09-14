@@ -12,6 +12,7 @@
   * [Problem 04](#problem-04)
   * [Problem 05](#problem-05)
   * [Problem 06](#problem-06)
+  * [Problem 06](#problem-07)
 * [Support](#support)
 
 ## Goals
@@ -66,7 +67,14 @@ d
 ### Problem 06
 (C) Find out whether a list is a palindrome. **Example:**
 ```erlang
-1> p06:run([a, b, c, b, a]).
+1> p07:run([[[a]], b, c, [d, [[e]]]]).
+true
+```
+
+### Problem 07
+(C) Flatten a nested list structure.. **Example:**
+```erlang
+1> p07:run([a,b,c,d,e]).
 true
 ```
 
