@@ -67,15 +67,15 @@ d
 ### Problem 06
 (C) Find out whether a list is a palindrome. **Example:**
 ```erlang
-1> p07:run([[[a]], b, c, [d, [[e]]]]).
+1> p06:run([a, b, c, b, a]).
 true
 ```
 
 ### Problem 07
 (C) Flatten a nested list structure.. **Example:**
 ```erlang
-1> p07:run([a,b,c,d,e]).
-true
+1> p07:run([[[a]], b, c, [d, [[e]]]]).
+[a,b,c,d,e]
 ```
 
 ### To be continued ...
