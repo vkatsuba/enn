@@ -19,7 +19,7 @@ run(_)            -> {error, badarg}.
 %% -------------------------------------------------------------------
 %% @private
 %% @doc
-%% Helper of P06
+%% Helper of P06 - Reverse a list
 %% @end
 %% -------------------------------------------------------------------
 -spec p06_h(L :: lists:list(), Acc :: lists:list()) -> Result :: lists:list() | {error, badarg}.
