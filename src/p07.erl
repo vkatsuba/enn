@@ -24,11 +24,11 @@ run(_)            -> {error, badarg}.
 %% -------------------------------------------------------------------
 -spec p07_h(L :: lists:list(), Acc :: lists:list()) -> Result :: lists:list() | {error, badarg}.
 
-p07_h([], Acc) -> Acc;
+p07_h([], Acc)                -> Acc;
 p07_h([[_ | _] = H | T], Acc) -> p07_h(T, p07_h(H, Acc));
-p07_h([[] | T], Acc) -> p07_h(T, Acc);
-p07_h([H | T], Acc) -> p07_h(T, [H | Acc]);
-p07_h(_, _) -> {error, badarg}.
+p07_h([[] | T], Acc)          -> p07_h(T, Acc);
+p07_h([H | T], Acc)           -> p07_h(T, [H | Acc]);
+p07_h(_, _)                   -> {error, badarg}.
 
 %% -------------------------------------------------------------------
 %% @private

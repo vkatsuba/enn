@@ -23,10 +23,10 @@ run(L) -> reverse(p08_h(L, []), []).
 %% -------------------------------------------------------------------
 -spec p08_h(L :: lists:list(), Acc :: lists:list()) -> Result :: lists:list() | {error, badarg}.
 
-p08_h([], Acc) -> Acc;
+p08_h([], Acc)                -> Acc;
 p08_h([H | [H | _] = T], Acc) -> p08_h(T, Acc);
-p08_h([H | T], Acc) -> p08_h(T, [H | Acc]);
-p08_h(_, _) -> {error, badarg}.
+p08_h([H | T], Acc)           -> p08_h(T, [H | Acc]);
+p08_h(_, _)                   -> {error, badarg}.
 
 %% -------------------------------------------------------------------
 %% @private
