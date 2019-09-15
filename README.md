@@ -13,6 +13,7 @@
   * [Problem 05](#problem-05)
   * [Problem 06](#problem-06)
   * [Problem 07](#problem-07)
+  * [Problem 08](#problem-08)
 * [Support](#support)
 
 ## Goals
@@ -72,9 +73,16 @@ true
 ```
 
 ### Problem 07
-(C) Flatten a nested list structure.. **Example:**
+(C) Flatten a nested list structure. **Example:**
 ```erlang
 1> p07:run([[[a]], b, c, [d, [[e]]]]).
+[a,b,c,d,e]
+```
+
+### Problem 08
+(C) Eliminate consecutive duplicates of list elements. **Example:**
+```erlang
+1> p08:run([a, a, a, b, b, b, b, c, d, d, d, d, e, e, e]).
 [a,b,c,d,e]
 ```
 
