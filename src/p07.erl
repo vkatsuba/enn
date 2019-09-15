@@ -26,6 +26,7 @@ run(_)            -> {error, badarg}.
 
 p07_h([], Acc) -> Acc;
 p07_h([[_ | _] = H | T], Acc) -> p07_h(T, p07_h(H, Acc));
+p07_h([[] | T], Acc) -> p07_h(T, Acc);
 p07_h([H | T], Acc) -> p07_h(T, [H | Acc]);
 p07_h(_, _) -> {error, badarg}.
 
