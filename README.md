@@ -14,6 +14,7 @@
   * [Problem 06](#problem-06)
   * [Problem 07](#problem-07)
   * [Problem 08](#problem-08)
+  * [Problem 09](#problem-09)
 * [Support](#support)
 
 ## Goals
@@ -84,6 +85,13 @@ true
 ```erlang
 1> p08:run([a, a, a, b, b, b, b, c, d, d, d, d, e, e, e]).
 [a,b,c,d,e]
+```
+
+### Problem 09
+(C) Pack consecutive duplicates of list elements into sublists. If a list contains repeated elements they should be placed in separate sublists. **Example:**
+```erlang
+1> p09:run([a, a, a, a, b, c, c, a, a, d, e, e, e, e]).
+[[a,a,a,a],[b],[c,c],[a,a],[d],[e,e,e,e]]
 ```
 
 ### To be continued ...
