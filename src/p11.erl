@@ -25,7 +25,7 @@ run(L) -> reverse(p11_h(L, []), []).
 -spec p11_h(L :: lists:list(), Acc :: lists:list()) -> Result :: lists:list() | {error, badarg}.
 
 p11_h([], Acc)                -> Acc;
-p11_h([H | T], [{N, H} | AT]) -> p11_h(T, [{N +1, H}| AT]);
+p11_h([H | T], [{N, H} | AT]) -> p11_h(T, [{N + 1, H}| AT]);
 p11_h([H, H | T], Acc)        -> p11_h(T, [{2, H} | Acc]);
 p11_h([H| T], Acc)            -> p11_h(T, [H | Acc]);
 p11_h(_, _)                   -> {error, badarg}.
