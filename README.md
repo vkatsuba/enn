@@ -19,6 +19,7 @@
   * [Problem 11](#problem-11)
   * [Problem 12](#problem-12)
   * [Problem 13](#problem-13)
+  * [Problem 14](#problem-14)
 * [Support](#support)
 
 ## Goals
@@ -131,6 +132,13 @@ As in problem P11, simplify the result list by replacing the singleton lists (1 
 ```erlang
 1> p13:run([{4,a},{1,b},{2,c},{2,a},{1,d},{4,e}]).
 [a,a,a,a,b,c,c,a,a,d,e,e,e,e]
+```
+
+### Problem 14
+(C) Duplicate the elements of a list. **Example:**
+```erlang
+1> p14:run([a,b,c,d,e]).
+[a,a,b,b,c,c,d,d,e,e]
 ```
 
 ### To be continued ...
