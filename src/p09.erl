@@ -24,16 +24,16 @@ run(L) -> reverse(p09_h(L, []), []).
 %% -------------------------------------------------------------------
 -spec p09_h(L :: lists:list(), Acc :: lists:list()) -> Result :: lists:list() | {error, badarg}.
 
-p09_h([], Acc)                                      -> Acc;
-p09_h([H | [H | _] = T], [AH = [H | _] | AT] = Acc) -> p09_h(T, [[H | AH] | AT]);
-p09_h([H | T], [AH = [H | _] | AT] = Acc)           -> p09_h(T, [[H | AH] | AT]);
-p09_h([H | T], Acc)                                 -> p09_h(T, [[H] | Acc]);
-p09_h(_, _)                                         -> {error, badarg}.
+p09_h([], Acc)                                -> Acc;
+p09_h([H | [H | _] = T], [AH = [H | _] | AT]) -> p09_h(T, [[H | AH] | AT]);
+p09_h([H | T], [AH = [H | _] | AT])           -> p09_h(T, [[H | AH] | AT]);
+p09_h([H | T], Acc)                           -> p09_h(T, [[H] | Acc]);
+p09_h(_, _)                                   -> {error, badarg}.
 
 %% -------------------------------------------------------------------
 %% @private
 %% @doc
-%% Helper of P08 - Reverse a list
+%% Helper of P09 - Reverse a list
 %% @end
 %% -------------------------------------------------------------------
 -spec reverse(L :: lists:list(), Acc :: lists:list()) -> Result :: lists:list() | {error, badarg}.

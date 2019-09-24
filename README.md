@@ -1,5 +1,5 @@
 # enn
-**enn** is small project of **Erlang 99 Problems**
+**enn** is small project of **Erlang 99 Problems**. Here provided a simple solution of **Erlang 99 Problems**.
 
 ## Contents
 * [Goals](#goals)
@@ -20,6 +20,7 @@
   * [Problem 12](#problem-12)
   * [Problem 13](#problem-13)
   * [Problem 14](#problem-14)
+  * [Problem 15](#problem-15)
 * [Support](#support)
 
 ## Goals
@@ -139,6 +140,13 @@ As in problem P11, simplify the result list by replacing the singleton lists (1 
 ```erlang
 1> p14:run([a,b,c,d,e]).
 [a,a,b,b,c,c,d,d,e,e]
+```
+
+### Problem 15
+(C) Replicate the elements of a list a given number of times. **Example:**
+```erlang
+1> p15:run([a,b,c,d,e],3).
+[a,a,a,b,b,b,c,c,c,d,d,d,e,e,e]
 ```
 
 ### To be continued ...

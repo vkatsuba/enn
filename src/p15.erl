@@ -1,38 +1,37 @@
--module(p12).
+-module(p15).
 
 -author('Viacheslav Katsuba <v.katsuba.dev@gmail.com>').
 
--export([run/1]).
+-export([run/2]).
 
 %% -------------------------------------------------------------------
 %% @doc
-%% P12 (*) Given a run-length code list generated as specified in problem P11. Construct its uncompressed version.
-%% > p12:run([{4, a}, b, {2, c}, {2, a}, d, {4, e}]).
-%% [a,a,a,a,b,c,c,a,a,d,e,e,e,e]
+%% P15 (*) Replicate the elements of a list a given number of times.
+%% > p15:run([a, b, c, d, e], 3).
+%% [a,a,a,b,b,b,c,c,c,d,d,d,e,e,e]
 %% @end
 %% -------------------------------------------------------------------
--spec run(L :: lists:list()) -> Result :: lists:list() | {error, badarg}.
+-spec run(L :: lists:list(), N :: integer()) -> Result :: lists:list() | {error, badarg}.
 
-run(L) -> reverse(p12_h(L, []), []).
+run(L, N) when is_integer(N)  -> reverse(p15_h(L, N, N, []), []);
+run(_, _)                     -> {error, badarg}.
 
 %% -------------------------------------------------------------------
 %% @private
 %% @doc
-%% Helper of p12
+%% Helper of p15
 %% @end
 %% -------------------------------------------------------------------
--spec p12_h(L :: lists:list(), Acc :: lists:list()) -> Result :: lists:list() | {error, badarg}.
+-spec p15_h(L :: lists:list(), N :: integer(), SN :: integer(), Acc :: lists:list()) -> Result :: lists:list().
 
-p12_h([], Acc)            -> Acc;
-p12_h([{1, H} | T], Acc)  -> p12_h(T, [H | Acc]);
-p12_h([{N, H} | T], Acc)  -> p12_h([{N - 1, H} | T], [H | Acc]);
-p12_h([H | T], Acc)       -> p12_h(T, [H | Acc]);
-p12_h(_, _)               -> {error, badarg}.
+p15_h([], _, _, Acc)            -> Acc;
+p15_h([_ | T], 0, N, Acc)       -> p15_h(T, N, N, Acc);
+p15_h([H | _ ] = L, N, SN, Acc) -> p15_h(L, N - 1, SN, [H|Acc]).
 
 %% -------------------------------------------------------------------
 %% @private
 %% @doc
-%% Helper of P12 - Reverse a list
+%% Helper of P15 - Reverse a list
 %% @end
 %% -------------------------------------------------------------------
 -spec reverse(L :: lists:list(), Acc :: lists:list()) -> Result :: lists:list() | {error, badarg}.

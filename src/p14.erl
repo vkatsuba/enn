@@ -30,7 +30,7 @@ p14_h(_, _)         -> {error, badarg}.
 %% -------------------------------------------------------------------
 %% @private
 %% @doc
-%% Helper of P08 - Reverse a list
+%% Helper of P14 - Reverse a list
 %% @end
 %% -------------------------------------------------------------------
 -spec reverse(L :: lists:list(), Acc :: lists:list()) -> Result :: lists:list() | {error, badarg}.
