@@ -26,7 +26,7 @@ run(_, _)                     -> {error, badarg}.
 
 p16_h([], _, _, Acc)        -> Acc;
 p16_h([_ | T], 1, N, Acc)   -> p16_h(T, N, N, Acc);
-p16_h([H | T ], N, SN, Acc) -> p16_h(T, N - 1, SN, [H|Acc]).
+p16_h([H | T], N, SN, Acc)  -> p16_h(T, N - 1, SN, [H|Acc]).
 
 %% -------------------------------------------------------------------
 %% @private
