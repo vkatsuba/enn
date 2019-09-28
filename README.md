@@ -139,7 +139,7 @@ As in problem P11, simplify the result list by replacing the singleton lists (1 
 ### Problem 14
 (C) Duplicate the elements of a list. **Example:**
 ```erlang
-1> p14:run([a,b,c,d,e]).
+1> p14:run([a, b, c, d, e]).
 [a,a,b,b,c,c,d,d,e,e]
 ```
 
