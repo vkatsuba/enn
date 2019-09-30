@@ -22,6 +22,7 @@
   * [Problem 14](#problem-14)
   * [Problem 15](#problem-15)
   * [Problem 16](#problem-16)
+  * [Problem 17](#problem-17)
 * [Support](#support)
 
 ## Goals
@@ -154,6 +155,12 @@ As in problem P11, simplify the result list by replacing the singleton lists (1 
 ```erlang
 1> p16:run([a,b,c,d,e,f,g,h,i,k], 3).
 [a,b,d,e,g,h,k]
+```
+### Problem 17
+(C) Split a list into two parts; the length of the first part is given. **Example:**
+```erlang
+1> p17:run([a, b, c, d, e, f, g, h, i, k], 3).
+[[a,b,c],[d,e,f,g,h,i,k]]
 ```
 
 ### To be continued ...
