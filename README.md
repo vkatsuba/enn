@@ -147,7 +147,7 @@ As in problem P11, simplify the result list by replacing the singleton lists (1 
 ### Problem 15
 (C) Replicate the elements of a list a given number of times. **Example:**
 ```erlang
-1> p15:run([a,b,c,d,e],3).
+1> p15:run([a, b, c, d, e], 3).
 [a,a,a,b,b,b,c,c,c,d,d,d,e,e,e]
 ```
 ### Problem 16
