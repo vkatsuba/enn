@@ -17,6 +17,13 @@
 run(L, N) when is_integer(N)  -> p17_h(L, N, [[]]);
 run(_, _)                     -> {error, badarg}.
 
+%% -------------------------------------------------------------------
+%% @private
+%% @doc
+%% Helper of p17
+%% @end
+%% -------------------------------------------------------------------
+-spec p17_h(L :: lists:list(), N :: integer(), Acc :: lists:list()) -> Result :: lists:list().
 
 p17_h([], _, Acc)             -> Acc;
 p17_h(L, 0, [AH | AT])        -> p17_h([], 0, [reverse(AH, []) | reverse([L | AT], [])]);

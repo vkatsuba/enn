@@ -23,6 +23,7 @@
   * [Problem 15](#problem-15)
   * [Problem 16](#problem-16)
   * [Problem 17](#problem-17)
+  * [Problem 18](#problem-18)
 * [Support](#support)
 
 ## Goals
@@ -161,6 +162,15 @@ As in problem P11, simplify the result list by replacing the singleton lists (1 
 ```erlang
 1> p17:run([a, b, c, d, e, f, g, h, i, k], 3).
 [[a,b,c],[d,e,f,g,h,i,k]]
+```
+
+### Problem 18
+(C) Extract a slice from a list.
+Given two indices, I and K, the slice is the list containing the elements between the I'th and K'th element of the original list (both limits included).
+Start counting the elements with 1. **Example:**
+```erlang
+1> p18:run([a, b, c, d, e, f, g, h, i, k], 3, 7).
+[c,d,e,f,g]
 ```
 
 ### To be continued ...
