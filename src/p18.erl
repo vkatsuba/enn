@@ -36,7 +36,7 @@ p18_h([_|T], S, E, Acc) -> p18_h(T, S - 1, E - 1, Acc).
 %% -------------------------------------------------------------------
 %% @private
 %% @doc
-%% Helper of P17 - Reverse a list
+%% Helper of P18 - Reverse a list
 %% @end
 %% -------------------------------------------------------------------
 -spec reverse(L :: lists:list(), Acc :: lists:list()) -> Result :: lists:list() | {error, badarg}.
