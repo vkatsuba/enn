@@ -24,7 +24,7 @@
   * [Problem 16](#problem-16)
   * [Problem 17](#problem-17)
   * [Problem 18](#problem-18)
-  * [Problem 18](#problem-19)
+  * [Problem 19](#problem-19)
 * [Support](#support)
 
 ## Goals
