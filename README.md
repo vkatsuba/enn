@@ -24,6 +24,7 @@
   * [Problem 16](#problem-16)
   * [Problem 17](#problem-17)
   * [Problem 18](#problem-18)
+  * [Problem 18](#problem-19)
 * [Support](#support)
 
 ## Goals
@@ -171,6 +172,16 @@ Start counting the elements with 1. **Example:**
 ```erlang
 1> p18:run([a, b, c, d, e, f, g, h, i, k], 3, 7).
 [c,d,e,f,g]
+```
+
+### Problem 19
+(C) Rotate a list N places to the left.
+Hint: Use the predefined functions length and append, as well as the result of problem P17. **Example:**
+```erlang
+1> p19:run([a, b, c, d, e, f, g, h], 3).
+[d,e,f,g,h,a,b,c]
+2> p19:run([a, b, c, d, e, f, g, h], -2).
+[g,h,a,b,c,d,e,f]
 ```
 
 ### To be continued ...
