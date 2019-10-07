@@ -10,14 +10,14 @@
 %% > p19:run([a, b, c, d, e, f, g, h], 3).
 %% [d, e, f, g, h, a, b, c]
 %% > p19:run([a, b, c, d, e, f, g, h], -2).
-%% [g,h,a,b,c,d,e,f]
+%% [g, h, a, b, c, d, e, f]
 %% @end
 %% -------------------------------------------------------------------
 -spec run(L :: lists:list(), N :: integer()) -> Result :: lists:list() | {error, badarg}.
 
-run(L, N) when 0 =< N -> reverse(p19_h(L, N, [], l), []);
-run(L, N) when 0 >= N -> reverse(p19_h(reverse(L, []), N, [], r), []);
-run(_, _)             -> {error, badarg}.
+run(L, N) when is_integer(N), 0 =< N  -> reverse(p19_h(L, N, [], l), []);
+run(L, N) when is_integer(N), 0 >= N  -> reverse(p19_h(reverse(L, []), N, [], r), []);
+run(_, _)                             -> {error, badarg}.
 
 %% -------------------------------------------------------------------
 %% @private
