@@ -24,10 +24,10 @@ run(_, _)                     -> {error, badarg}.
 %% -------------------------------------------------------------------
 -spec p20_h(L :: lists:list(), I :: integer(), N :: integer(), Acc :: lists:list()) -> Result :: lists:list().
 
-p20_h([], _, _,Acc)     -> Acc;
-p20_h([H|T], 0, N, Acc) -> p20_h(T, 0, N, [H|Acc]);
-p20_h([_|T], N, N, Acc) -> p20_h(T, 0, N, Acc);
-p20_h([H|T], I, N, Acc) -> p20_h(T, I + 1, N, [H|Acc]).
+p20_h([], _, _,Acc)       -> Acc;
+p20_h([H | T], 0, N, Acc) -> p20_h(T, 0, N, [H | Acc]);
+p20_h([_|T], N, N, Acc)   -> p20_h(T, 0, N, Acc);
+p20_h([H | T], I, N, Acc) -> p20_h(T, I + 1, N, [H | Acc]).
 
 %% -------------------------------------------------------------------
 %% @private

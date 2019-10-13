@@ -27,11 +27,11 @@ run(_, _)                             -> {error, badarg}.
 %% -------------------------------------------------------------------
 -spec p19_h(L :: lists:list(), N :: integer(), Acc :: lists:list(), Side :: atom()) -> Result :: lists:list().
 
-p19_h([], _, _, _)      -> [];
-p19_h(L, 0, Acc, l)     -> Acc ++ reverse(L, []);
-p19_h(L, 0, Acc, r)     -> L ++ reverse(Acc, []);
-p19_h([H|T], N, Acc, l) -> p19_h(T, N - 1, [H|Acc], l);
-p19_h([H|T], N, Acc, r) -> p19_h(T, N + 1, [H|Acc], r).
+p19_h([], _, _, _)        -> [];
+p19_h(L, 0, Acc, l)       -> Acc ++ reverse(L, []);
+p19_h(L, 0, Acc, r)       -> L ++ reverse(Acc, []);
+p19_h([H | T], N, Acc, l) -> p19_h(T, N - 1, [H | Acc], l);
+p19_h([H | T], N, Acc, r) -> p19_h(T, N + 1, [H | Acc], r).
 
 %% -------------------------------------------------------------------
 %% @private

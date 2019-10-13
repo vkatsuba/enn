@@ -27,11 +27,11 @@ run(_, _, _)                     -> {error, badarg}.
 %% -------------------------------------------------------------------
 -spec p18_h(L :: lists:list(), Start :: integer(), End :: integer(), Acc :: lists:list()) -> Result :: lists:list().
 
-p18_h([], 0, _, _)      -> [];
-p18_h(_, 0, 0, Acc)     -> Acc;
-p18_h([H|T], 0, E, Acc) -> p18_h(T, 0, E - 1, [H | Acc]);
-p18_h([H|T], 1, E, Acc) -> p18_h(T, 0, E - 1, [H | Acc]);
-p18_h([_|T], S, E, Acc) -> p18_h(T, S - 1, E - 1, Acc).
+p18_h([], 0, _, _)        -> [];
+p18_h(_, 0, 0, Acc)       -> Acc;
+p18_h([H | T], 0, E, Acc) -> p18_h(T, 0, E - 1, [H | Acc]);
+p18_h([H | T], 1, E, Acc) -> p18_h(T, 0, E - 1, [H | Acc]);
+p18_h([_ | T], S, E, Acc) -> p18_h(T, S - 1, E - 1, Acc).
 
 %% -------------------------------------------------------------------
 %% @private
