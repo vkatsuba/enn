@@ -25,6 +25,7 @@
   * [Problem 17](#problem-17)
   * [Problem 18](#problem-18)
   * [Problem 19](#problem-19)
+  * [Problem 20](#problem-20)
 * [Support](#support)
 
 ## Goals
@@ -182,6 +183,13 @@ Hint: Use the predefined functions length and append, as well as the result of p
 [d,e,f,g,h,a,b,c]
 2> p19:run([a, b, c, d, e, f, g, h], -2).
 [g,h,a,b,c,d,e,f]
+```
+
+### Problem 20
+(C) Remove the K'th element from a list. **Example:**
+```erlang
+1> p20:run([a, b, c, d], 2).
+[a,c,d]
 ```
 
 ### To be continued ...
