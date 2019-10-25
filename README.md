@@ -1,4 +1,4 @@
-# enn
+# enn - Erlang 99 Problems
 **enn** is small project of **Erlang 99 Problems**. Here provided a simple solution of **Erlang 99 Problems**.
 
 ## Contents
