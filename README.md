@@ -44,7 +44,7 @@ The examples of 99 problems was get from [Ninety-Nine Lisp Problems](http://www.
 
 ### Problem 01
 (C) Find the last box of a list. **Example:**
-[p01.erl](https://github.com/vkatsuba/enn/blob/master/src/p01.erl?target=_blank)
+[p01.erl](https://github.com/vkatsuba/enn/blob/master/src/p01.erl)
 ```erlang
 1> p01:run([a, b, c, d]).
 d
@@ -52,6 +52,7 @@ d
 
 ### Problem 02
 (C) Find the last but one box of a list. **Example:**
+[p02.erl](https://github.com/vkatsuba/enn/blob/master/src/p02.erl)
 ```erlang
 1> p02:run([a, b, c, d]).
 [c,d]
