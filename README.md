@@ -60,6 +60,7 @@ d
 
 ### Problem 03
 (C) Find the K'th element of a list. **Example:**
+[p03.erl](https://github.com/vkatsuba/enn/blob/master/src/p03.erl)
 ```erlang
 1> p03:run([a, b, c, d, e], 3).
 с
