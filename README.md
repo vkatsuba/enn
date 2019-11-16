@@ -68,6 +68,7 @@ d
 
 ### Problem 04
 (C) Find the number of elements of a list. **Example:**
+[p04.erl](https://github.com/vkatsuba/enn/blob/master/src/p04.erl)
 ```erlang
 1> p04:run([a, b, c, d, e]).
 5
