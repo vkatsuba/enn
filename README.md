@@ -83,6 +83,7 @@ d
 
 ### Problem 06
 (C) Find out whether a list is a palindrome. **Example:**
+[p05.erl](https://github.com/vkatsuba/enn/blob/master/src/p05.erl)
 ```erlang
 1> p06:run([a, b, c, b, a]).
 true
