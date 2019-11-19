@@ -92,6 +92,7 @@ true
 
 ### Problem 07
 (C) Flatten a nested list structure. **Example:**
+[p07.erl](https://github.com/vkatsuba/enn/blob/master/src/p07.erl)
 ```erlang
 1> p07:run([[[a]], b, c, [d, [[e]]]]).
 [a,b,c,d,e]
