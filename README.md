@@ -100,6 +100,7 @@ true
 
 ### Problem 08
 (C) Eliminate consecutive duplicates of list elements. **Example:**
+[p08.erl](https://github.com/vkatsuba/enn/blob/master/src/p08.erl)
 ```erlang
 1> p08:run([a, a, a, b, b, b, b, c, d, d, d, d, e, e, e]).
 [a,b,c,d,e]
