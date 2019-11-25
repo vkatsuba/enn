@@ -108,6 +108,7 @@ true
 
 ### Problem 09
 (C) Pack consecutive duplicates of list elements into sublists. If a list contains repeated elements they should be placed in separate sublists. **Example:**
+[p09.erl](https://github.com/vkatsuba/enn/blob/master/src/p09.erl)
 ```erlang
 1> p09:run([a, a, a, a, b, c, c, a, a, d, e, e, e, e]).
 [[a,a,a,a],[b],[c,c],[a,a],[d],[e,e,e,e]]
