@@ -128,6 +128,7 @@ Consecutive duplicates of elements are encoded as lists (N E) where N is the num
 (C) Modified run-length encoding.
 Modify the result of problem P10 in such a way that if an element has no duplicates it is simply copied into the result list.
 Only elements with duplicates are transferred as (N E) lists. **Example:**
+[p11.erl](https://github.com/vkatsuba/enn/blob/master/src/p11.erl)
 ```erlang
 1> p11:run([a, a, a, a, b, c, c, a, a, d, e, e, e, e]).
 [{4,a},b,{2,c},{2,a},d,{4,e}]
