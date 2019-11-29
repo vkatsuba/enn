@@ -136,6 +136,7 @@ Only elements with duplicates are transferred as (N E) lists. **Example:**
 
 ### Problem 12
 (C) Given a run-length code list generated as specified in problem P11. Construct its uncompressed version. **Example:**
+[p12.erl](https://github.com/vkatsuba/enn/blob/master/src/p12.erl)
 ```erlang
 1> p12:run([{4, a}, b, {2, c}, {2, a}, d, {4, e}]).
 [a,a,a,a,b,c,c,a,a,d,e,e,e,e]
