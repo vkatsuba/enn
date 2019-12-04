@@ -170,6 +170,7 @@ As in problem P11, simplify the result list by replacing the singleton lists (1 
 ```
 ### Problem 16
 (C) Drop every N'th element from a list. **Example:**
+[p16.erl](https://github.com/vkatsuba/enn/blob/master/src/p16.erl)
 ```erlang
 1> p16:run([a, b, c, d, e, f, g, h, i, k], 3).
 [a,b,d,e,g,h,k]
