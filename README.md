@@ -177,6 +177,7 @@ As in problem P11, simplify the result list by replacing the singleton lists (1 
 ```
 ### Problem 17
 (C) Split a list into two parts; the length of the first part is given. **Example:**
+[p17.erl](https://github.com/vkatsuba/enn/blob/master/src/p17.erl)
 ```erlang
 1> p17:run([a, b, c, d, e, f, g, h, i, k], 3).
 [[a,b,c],[d,e,f,g,h,i,k]]
