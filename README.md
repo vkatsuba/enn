@@ -1,5 +1,5 @@
-# enn - Erlang 99 Problems
-**enn** is small project of **Erlang 99 Problems**. Here provided a simple solution of **Erlang 99 Problems**.
+# enn - Erlang Ninety Nine Problems
+**enn** is small project of **Erlang Ninety Nine Problems**. Here provided a simple solution of **Erlang Ninety Nine Problems**.
 
 ## Contents
 * [Goals](#goals)
