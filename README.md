@@ -29,7 +29,7 @@
 * [Support](#support)
 
 ## Goals
-**enn** aims to provide a simple solutions of **Erlang Ninety Nine Problems**
+**enn** aims to provide a simple solutions of **Erlang Ninety Nine Problems**.
 
 ## Build & Run
 ```sh
